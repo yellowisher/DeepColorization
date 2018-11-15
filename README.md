@@ -1,7 +1,7 @@
 # DeepColorization
 
 Just another copy of [interactive-deep-colorization](https://github.com/yellowisher/DeepColorization). You can find decent pytorch code and paper there.  
-As as purpose of study, I wrote tensorflow version of it.  
+As a purpose of study, I wrote tensorflow version of it.  
 I want to write down what I learned and this might be helpful for someone someday.  
 
 Actually I didn't run full training and just checked "model basically works".  
@@ -20,7 +20,7 @@ But they used <code>conv+add</code> rather than <code>concat</code>
 I just noticed they are equivalent; you can find some more explanation [here](https://github.com/junyanz/interactive-deep-colorization/issues/55).
 
 ## X110?
-In LAB color space, each element(L,A,B) is one byte. <code>(range of -128 ~ 127)</code>  
+We allocates one byte for each LAB color elements(L,A,B). <code>(range of -128 ~ 127)</code>  
 But you can find they multiplying result<code>(which is range of -1.0 ~ 1.0)</code> by 110 rather than 128.  
 The reason of that is out of that range is considered as "imaginary part". You can find [answer](https://stackoverflow.com/questions/19099063/what-are-the-ranges-of-coordinates-in-the-cielab-color-space) about it.
 

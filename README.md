@@ -2,17 +2,17 @@
 
 Just another copy of [interactive-deep-colorization](https://github.com/yellowisher/DeepColorization). You can find decent pytorch code and paper there.  
 As a purpose of study, I wrote tensorflow version of it.  
-I want to write down what I learned and this might be helpful for someone someday.  
+I want to write down what I learned and this might be helpful for someone in someday.  
 
 Actually I didn't run full training and just checked "model basically works".  
-And there are a lot of things to changed. These are just for reference :p
+And there are a lot of things to be changed. These are just for reference :p
 
 # Note
 Here are some things I learned and I changed.
 ## Batch normalization layer  
 In original model, they used <code>CNN -> ReLU -> BatchNorm</code>  
 But after some [reading](https://www.quora.com/What-is-the-order-of-using-batch-normalization-Is-it-before-or-after-activation-function), <code>CNN -> BatchNorm -> ReLU</code> makes more sense to me so I tweaked it.  
-And because of that I don't need to add bias at the end of layers. (because BatchNormLayer includes it)
+And because of that, I don't need to add bias at the end of layers. (because BatchNormLayer includes it)
 
 ## Shortcut connection
 U-net, which is basic model of original network, using concatenation for shortcut connection.  

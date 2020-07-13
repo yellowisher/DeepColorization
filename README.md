@@ -8,7 +8,7 @@ Actually I didn't run full training and just checked "model basically works".
 And there are a lot of things to be changed. These are just for reference :p
 
 # Note
-Here are some things I learned and I changed.
+Here are things I learned and modified.
 ## Batch normalization layer  
 In original model, they used <code>CNN -> ReLU -> BatchNorm</code>  
 But after some [reading](https://www.quora.com/What-is-the-order-of-using-batch-normalization-Is-it-before-or-after-activation-function), <code>CNN -> BatchNorm -> ReLU</code> makes more sense to me so I tweaked it.  

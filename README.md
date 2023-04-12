@@ -1,6 +1,6 @@
 # DeepColorization
 
-Just another copy of [interactive-deep-colorization](https://github.com/yellowisher/DeepColorization). You can find decent pytorch code and paper there.  
+Just another copy of [interactive-deep-colorization](https://github.com/junyanz/interactive-deep-colorization). You can find decent pytorch code and paper there.  
 As a purpose of study, I wrote tensorflow version of it.  
 I want to write down what I learned and this might be helpful for someone in someday.  
 
